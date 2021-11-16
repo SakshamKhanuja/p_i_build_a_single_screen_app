@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Contains a list of special offers / promos.-->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="16dp">
+
+                    <androidx.cardview.widget.CardView style="@style/CardViewStyle">
+
+                        <LinearLayout style="@style/HorizontalChildStyle">
+
+                            <LinearLayout style="@style/OfferLayout">
+
+                                <TextView
+                                    style="@style/OfferTitle"
+                                    android:text="@string/offer_one_title" />
+
+                                <TextView
+                                    style="@style/OfferOff"
+                                    android:text="@string/offer_one_off" />
+
+                                <TextView
+                                    style="@style/OfferCode"
+                                    android:text="@string/offer_one_code" />
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/OfferLayoutImageView"
+                                android:contentDescription="@string/offer_one_description"
+                                android:src="@drawable/ic_sandwich" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/CardViewStyle"
+                        android:layout_marginHorizontal="16dp">
+
+                        <LinearLayout style="@style/HorizontalChildStyle">
+
+                            <LinearLayout style="@style/OfferLayout">
+
+                                <TextView
+                                    style="@style/OfferTitle"
+                                    android:text="@string/offer_two_title" />
+
+                                <TextView
+                                    style="@style/OfferOff"
+                                    android:text="@string/offer_two_off" />
+
+                                <TextView
+                                    style="@style/OfferCode"
+                                    android:text="@string/offer_two_code" />
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/OfferLayoutImageView"
+                                android:contentDescription="@string/offer_two_description"
+                                android:src="@drawable/ic_cart" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/CardViewStyle"
+                        app:cardBackgroundColor="#4fc3f7">
+
+                        <LinearLayout style="@style/HorizontalChildStyle">
+
+                            <LinearLayout style="@style/OfferLayout">
+
+                                <TextView
+                                    style="@style/OfferTitle"
+                                    android:text="@string/offer_three_title"
+                                    android:textColor="#11539E" />
+
+                                <TextView
+                                    style="@style/OfferOff"
+                                    android:text="@string/offer_two_off"
+                                    android:textColor="#11539E" />
+
+                                <TextView
+                                    style="@style/OfferCode"
+                                    android:text="@string/offer_two_code"
+                                    android:textColor="#11539E" />
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/OfferLayoutImageView"
+                                android:contentDescription="@string/offer_three_description"
+                                android:src="@drawable/ic_dairy" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/CardViewStyle"
+                        android:layout_marginStart="16dp"
+                        app:cardBackgroundColor="#FBC02D">
+
+                        <LinearLayout style="@style/HorizontalChildStyle">
+
+                            <LinearLayout style="@style/OfferLayout">
+
+                                <TextView
+                                    style="@style/OfferTitle"
+                                    android:text="@string/offer_four_title"
+                                    android:textColor="#11539E" />
+
+                                <TextView
+                                    style="@style/OfferOff"
+                                    android:text="@string/offer_four_off"
+                                    android:textColor="#11539E" />
+
+                                <TextView
+                                    style="@style/OfferCode"
+                                    android:text="@string/offer_four_code"
+                                    android:textColor="#11539E" />
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/OfferLayoutImageView"
+                                android:contentDescription="@string/offer_four_description"
+                                android:src="@drawable/ic_truck" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/Category"
+                android:layout_marginBottom="16dp"
+                android:text="@string/category_one_title" />
+
+            <!--Broccoli-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#81C784">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_one_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_one_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_one_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_broccoli" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Cabbage-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#C8E6C9">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_two_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_two_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_two_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_cabbage" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Red Cabbage-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#D1C4E9">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_three_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_three_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_three_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_cabbage_red" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Capsicum-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#81C784">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_four_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_four_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_four_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_capsicum" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Red Capsicum-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFCDD2">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_five_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_five_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_five_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_capsicum_red" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Yellow Capsicum-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFF176">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_six_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_six_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_six_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_capsicum_yellow" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Carrot-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFE0B2">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_seven_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_seven_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_seven_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_carrot" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Cucumber-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#B9F6CA">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_eight_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_eight_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_eight_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_cucumber" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Eggplant-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#D1C4E9">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_nine_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_nine_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_nine_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_eggplant" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Mushroom-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#D7CCC8">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_ten_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_ten_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_ten_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_mushroom" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Onion-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#E1BEE7">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_eleven_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_eleven_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_eleven_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_onion" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Potato-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFE0B2">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_twelve_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_twelve_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_twelve_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_potato" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Radish-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#A5D6A7">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_thirteen_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_thirteen_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_thirteen_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_radish" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Tomato-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFCDD2">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_fourteen_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_fourteen_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_fourteen_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_tomato" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Turnip-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#81C784">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/vegetable_fifteen_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/vegetable_fifteen_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_fifteen_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_turnip" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginHorizontal="32dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                style="@style/Category"
+                android:layout_marginVertical="16dp"
+                android:text="@string/category_two_title" />
+
+            <!--Eggs-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#D7CCC8">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/dairy_one_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/dairy_one_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/dairy_one_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_eggs" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Milk-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#81D4FA">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/dairy_two_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/dairy_two_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/vegetable_two_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_milk" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Bread-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFE0B2">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/dairy_three_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/dairy_three_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/dairy_three_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_bread" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--Cheese-->
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                app:cardBackgroundColor="#FFE082">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/VegFruitTitle"
+                            android:text="@string/dairy_four_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/dairy_four_description" />
+
+                        <TextView
+                            style="@style/VegFruitPrice"
+                            android:text="@string/dairy_four_price" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/category_one_title"
+                        android:src="@drawable/ic_cheese" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View style="@style/Divider" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#01579b"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/OfferTitle"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/about_app_title" />
+
+                <TextView
+                    style="@style/VegFruitDescription"
+                    android:text="@string/about_app_description" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                style="@style/VegFruitCardStyle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="#006064">
+
+                <LinearLayout style="@style/VegFruitStyle">
+
+                    <LinearLayout style="@style/OfferLayout">
+
+                        <TextView
+                            style="@style/OfferTitle"
+                            android:layout_marginBottom="4dp"
+                            android:text="@string/app_location_title" />
+
+                        <TextView
+                            style="@style/VegFruitDescription"
+                            android:text="@string/app_location_description" />
+                    </LinearLayout>
+
+                    <ImageView
+                        style="@style/VegFruitImageView"
+                        android:contentDescription="@string/app_location_image"
+                        android:src="@drawable/ic_location" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

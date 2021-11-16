@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Single Screen App</string>
+
+    <string name="about_app_title">About Us</string>
+    <string name="about_app_description">We bring the season\'s best mix of 100% certified-organic produce and hand-crafted farm products conveniently to your door by growing and partnering with local farms and artisans.</string>
+
+    <string name="app_location_title">Locate Nearest Store</string>
+    <string name="app_location_description">Our stores are located at every major city. Click here to find out the one near you.</string>
+    <string name="app_location_image">Nearest Location</string>
+
+    <string name="category_one_title">Vegetables</string>
+    <string name="category_two_title">Dairy</string>
+
+    <!--Vegetables Title-->
+    <string name="vegetable_one_title">Broccoli</string>
+    <string name="vegetable_two_title">Cabbage</string>
+    <string name="vegetable_three_title">Red Cabbage</string>
+    <string name="vegetable_four_title">Capsicum</string>
+    <string name="vegetable_five_title">Red Capsicum</string>
+    <string name="vegetable_six_title">Yellow Capsicum</string>
+    <string name="vegetable_seven_title">Carrot</string>
+    <string name="vegetable_eight_title">Cucumber</string>
+    <string name="vegetable_nine_title">Eggplant</string>
+    <string name="vegetable_ten_title">Mushroom</string>
+    <string name="vegetable_eleven_title">Onion</string>
+    <string name="vegetable_twelve_title">Potato</string>
+    <string name="vegetable_thirteen_title">Radish</string>
+    <string name="vegetable_fourteen_title">Tomato</string>
+    <string name="vegetable_fifteen_title">Turnip</string>
+
+    <!--Vegetable Description-->
+    <string name="vegetable_one_description">Broccoli is an edible green plant in the cabbage family whose large flowering head, stalk and small associated leaves are eaten as a vegetable. Broccoli is classified in the Italica cultivar group of the species Brassica oleracea.</string>
+    <string name="vegetable_two_description">Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red, or white biennial plant grown as an annual vegetable crop for its dense-leaved heads.</string>
+    <string name="vegetable_three_description">The red cabbage is a kind of cabbage, also known as Blaukraut after preparation. Its leaves are colored dark red/purple. However, the plant changes its color according to the pH value of the soil, due to a pigment belonging to anthocyanins.</string>
+    <string name="vegetable_four_description">Capsicum is a genus of flowering plants in the nightshade family Solanaceae, native to the Americas, cultivated worldwide for their chili pepper or bell pepper fruit.</string>
+    <string name="vegetable_five_description">Red capsicum have a sweet, almost fruity taste. Pimento and paprika are both prepared from red bell peppers.</string>
+    <string name="vegetable_six_description">Yellow capsicums are 3 to 4 lobed fruits of the capsicum annum species. They are milder in taste than green capsicum, and so are known as sweet peppers.</string>
+    <string name="vegetable_seven_description">The carrot is a root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia.</string>
+    <string name="vegetable_eight_description">Cucumber is a widely-cultivated creeping vine plant in the Cucurbitaceae gourd family that bears usually cylindrical fruits, which are used as vegetables.</string>
+    <string name="vegetable_nine_description">Eggplant, aubergine or brinjal is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit. Most commonly purple, the spongy, absorbent fruit is used in several cuisines. Typically used as a vegetable in cooking, it is a berry by botanical definition.</string>
+    <string name="vegetable_ten_description">A mushroom or toadstool is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source.</string>
+    <string name="vegetable_eleven_description">The onion, also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium. The shallot is a botanical variety of the onion. Until 2010, the shallot was classified as a separate species.</string>
+    <string name="vegetable_twelve_description">The potato is a starchy tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas.</string>
+    <string name="vegetable_thirteen_description">The radish is an edible root vegetable of the family Brassicaceae that was domesticated in Asia prior to Roman times. Radishes are grown and consumed throughout the world, being mostly eaten raw as a crunchy salad vegetable with a pungent flavor.</string>
+    <string name="vegetable_fourteen_description">The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America. The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.</string>
+    <string name="vegetable_fifteen_description">The turnip or white turnip is a root vegetable commonly grown in temperate climates worldwide for its white, fleshy taproot. The word turnip is a compound of turn as in turned/rounded on a lathe and neep, derived from Latin napus, the word for the plant.</string>
+
+    <!--Vegetable Price-->
+    <string name="vegetable_one_price">1 Pc (approx. 250g to 500g) - ₹ 415</string>
+    <string name="vegetable_two_price">1 Pc (approx. 500g to 800g) - ₹ 41</string>
+    <string name="vegetable_three_price">1 Pc (approx. 400g to 600g) - ₹ 202.50</string>
+    <string name="vegetable_four_price">3 Pc (500g) - ₹ 76</string>
+    <string name="vegetable_five_price">2 Pc - ₹ 199</string>
+    <string name="vegetable_six_price">@string/vegetable_five_price</string>
+    <string name="vegetable_seven_price">500g - ₹ 19</string>
+    <string name="vegetable_eight_price">500g - ₹ 29</string>
+    <string name="vegetable_nine_price">1Kg - ₹ 99</string>
+    <string name="vegetable_ten_price">1 Pack (approx. 180g to 200g - ₹ 51</string>
+    <string name="vegetable_eleven_price">1 Kg - ₹ 49</string>
+    <string name="vegetable_twelve_price">1 Kg - ₹ 38</string>
+    <string name="vegetable_thirteen_price">1 Kg - ₹ 38</string>
+    <string name="vegetable_fourteen_price">1 Kg - ₹ 70.2</string>
+    <string name="vegetable_fifteen_price">1 Kg - ₹ 56</string>
+
+
+    <string name="offer_one_title">Enjoy Sandwiches</string>
+    <string name="offer_two_title">Fresh Veggies</string>
+    <string name="offer_three_title">Dairy Products</string>
+    <string name="offer_four_title">Own a Store?</string>
+
+    <string name="offer_one_off">50% Off</string>
+    <string name="offer_two_off">10% Off</string>
+    <string name="offer_three_off">@string/offer_two_off</string>
+    <string name="offer_four_off">5% Off</string>
+
+    <string name="offer_one_code">Code - Sand50</string>
+    <string name="offer_two_code">Code - Health</string>
+    <string name="offer_three_code">Code - Dairy10</string>
+    <string name="offer_four_code">On Bulk</string>
+
+    <string name="offer_one_description">Sandwich</string>
+    <string name="offer_two_description">Veggies in a cart.</string>
+    <string name="offer_three_description">Cheese and Milk</string>
+    <string name="offer_four_description">Delivery Truck</string>
+
+    <!---Dairy Title-->
+    <string name="dairy_one_title">Eggs</string>
+    <string name="dairy_two_title">Milk</string>
+    <string name="dairy_three_title">Bread</string>
+    <string name="dairy_four_title">Cheese</string>
+
+    <!--Dairy Prices-->
+    <string name="dairy_one_price">6 Pc (Brown) - ₹ 126</string>
+    <string name="dairy_two_price">500 ml - ₹ 34</string>
+    <string name="dairy_three_price">400g (Whole Wheat) - ₹ 24</string>
+    <string name="dairy_four_price">500 g (Amul) - ₹ 270</string>
+
+    <!--Dairy Description-->
+    <string name="dairy_one_description">The chicken egg is made up of approximately two-thirds white and one-third yolk. The yolk contains lipids, vitamins, minerals, and carotenoid pigments. It is considered a rich source of bioavailable lutein and zeaxanthin carotenoids which are present only in the egg yolk.</string>
+    <string name="dairy_two_description">Cow\'s milk is a good source of protein and calcium, as well as nutrients including vitamin B12 and iodine. It also contains magnesium, which is important for bone development and muscle function, and whey and casein, which have been found to play a role in lowering blood pressure</string>
+    <string name="dairy_three_description">Bread is a staple food prepared from a dough of flour and water, usually by baking. Throughout recorded history, it has been a prominent food in large parts of the world.</string>
+    <string name="dairy_four_description">Cheese is a dairy product, derived from milk and produced in wide ranges of flavors, textures and forms by coagulation of the milk protein casein.</string>
+</resources>

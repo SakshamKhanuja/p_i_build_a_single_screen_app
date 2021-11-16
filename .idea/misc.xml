@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_broccoli.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_cabbage.xml" value="0.30843881856540084" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_cabbage_red.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_capsicum.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_capsicum_red.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_capsicum_yellow.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_carrot.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_cart.xml" value="0.30632911392405066" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_corn.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_corn_three.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_cucumber.xml" value="0.30843881856540084" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_dairy.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_eggplant.xml" value="0.30843881856540084" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_eggs.xml" value="0.2324074074074074" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_flight.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_icon_grid_red.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_kebab.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_kebab_sandwich.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_location.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_map.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_onion.xml" value="0.30843881856540084" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_potato.xml" value="0.3106837606837607" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_radish.xml" value="0.30843881856540084" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_sandwich.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_truck.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_turnip.xml" value="0.30843881856540084" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/drawable/ic_veggie_one.xml" value="0.33076923076923076" />
+        <entry key="..\:/Users/ssk/Documents/Udacity/Android/Android Basics Nanodegree by Google/User Interface/Project - Build a Single Screen App/app/src/main/res/layout/activity_main.xml" value="0.15761561306745864" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
