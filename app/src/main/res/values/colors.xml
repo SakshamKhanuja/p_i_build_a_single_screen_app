@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#212121</color>
-    <color name="colorPrimaryDark">@color/colorPrimary</color>
-    <color name="colorAccent">@color/colorPrimary</color>
+    <!--UI Elements-->
+    <color name="colorPrimaryDark">#EEEEEE</color>
+    <color name="colorAccent">@color/colorTextDefault</color>
+    <color name="colorTextDefault">#424242</color>
+    <color name="colorTextSecondary">@android:color/white</color>
+    <color name="colorDivider">#E0E0E0</color>
+
+    <!--Color for offers-->
+    <color name="colorOfferOne">#B71C1C</color>
+    <color name="colorOfferTwo">#4fc3f7</color>
+    <color name="colorOfferThree">#FBC02D</color>
+    <color name="colorOfferFour">#311B92</color>
+
+    <!--Color offer elements-->
+    <color name="colorCustomOfferText">#11539E</color>
+
+    <!--Color for Vegetable Items-->
+    <color name="colorVegetableOne">#81C784</color>
+    <color name="colorVegetableTwo">#C8E6C9</color>
+    <color name="colorVegetableThree">#D1C4E9</color>
+    <color name="colorVegetableFour">#81C784</color>
+    <color name="colorVegetableFive">#FFCDD2</color>
+    <color name="colorVegetableSix">#FFF176</color>
+    <color name="colorVegetableSeven">#FFE0B2</color>
+    <color name="colorVegetableEight">#B9F6CA</color>
+    <color name="colorVegetableNine">#D1C4E9</color>
+    <color name="colorVegetableTen">#D7CCC8</color>
+    <color name="colorVegetableEleven">#E1BEE7</color>
+    <color name="colorVegetableTwelve">#FFE0B2</color>
+    <color name="colorVegetableThirteen">#A5D6A7</color>
+    <color name="colorVegetableFourteen">#FFCDD2</color>
+    <color name="colorVegetableFifteen">#81C784</color>
+
+    <!--Color for Dairy Products-->
+    <color name="colorDairyOne">#D7CCC8</color>
+    <color name="colorDairyTwo">#81D4FA</color>
+    <color name="colorDairyThree">#FFE0B2</color>
+    <color name="colorDairyFour">#FFECB3</color>
+
+    <!--Color for "About Us" Section-->
+    <color name="colorAboutUs">#1976D2</color>
+    <color name="colorLocation">#006064</color>
 </resources>

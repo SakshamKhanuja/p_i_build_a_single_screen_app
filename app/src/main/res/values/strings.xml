@@ -1,13 +1,31 @@
 <resources>
-    <string name="app_name">Single Screen App</string>
+    <string name="app_name">Nearby Fresh</string>
 
-    <string name="about_app_title">About Us</string>
-    <string name="about_app_description">We bring the season\'s best mix of 100% certified-organic produce and hand-crafted farm products conveniently to your door by growing and partnering with local farms and artisans.</string>
+    <!--Offer Title-->
+    <string name="offer_one_title">Get 5 Kg of Onion</string>
+    <string name="offer_two_title">Fresh Veggies</string>
+    <string name="offer_three_title">Dairy Products</string>
+    <string name="offer_four_title">Own a Store?</string>
 
-    <string name="app_location_title">Locate Nearest Store</string>
-    <string name="app_location_description">Our stores are located at every major city. Click here to find out the one near you.</string>
-    <string name="app_location_image">Nearest Location</string>
+    <!--Offer Percent Off-->
+    <string name="offer_one_off">20% Off</string>
+    <string name="offer_two_off">10% Off</string>
+    <string name="offer_three_off">@string/offer_two_off</string>
+    <string name="offer_four_off">5% Off</string>
 
+    <!--Offer Code-->
+    <string name="offer_one_code">Code - Onion20</string>
+    <string name="offer_two_code">Code - Health</string>
+    <string name="offer_three_code">Code - Dairy10</string>
+    <string name="offer_four_code">On Bulk</string>
+
+    <!--Offer Image Content Description-->
+    <string name="offer_one_description">Sandwich</string>
+    <string name="offer_two_description">Veggies in a cart.</string>
+    <string name="offer_three_description">Cheese and Milk</string>
+    <string name="offer_four_description">Delivery Truck</string>
+
+    <!--Item Categories-->
     <string name="category_one_title">Vegetables</string>
     <string name="category_two_title">Dairy</string>
 
@@ -62,27 +80,6 @@
     <string name="vegetable_fourteen_price">1 Kg - ₹ 70.2</string>
     <string name="vegetable_fifteen_price">1 Kg - ₹ 56</string>
 
-
-    <string name="offer_one_title">Enjoy Sandwiches</string>
-    <string name="offer_two_title">Fresh Veggies</string>
-    <string name="offer_three_title">Dairy Products</string>
-    <string name="offer_four_title">Own a Store?</string>
-
-    <string name="offer_one_off">50% Off</string>
-    <string name="offer_two_off">10% Off</string>
-    <string name="offer_three_off">@string/offer_two_off</string>
-    <string name="offer_four_off">5% Off</string>
-
-    <string name="offer_one_code">Code - Sand50</string>
-    <string name="offer_two_code">Code - Health</string>
-    <string name="offer_three_code">Code - Dairy10</string>
-    <string name="offer_four_code">On Bulk</string>
-
-    <string name="offer_one_description">Sandwich</string>
-    <string name="offer_two_description">Veggies in a cart.</string>
-    <string name="offer_three_description">Cheese and Milk</string>
-    <string name="offer_four_description">Delivery Truck</string>
-
     <!---Dairy Title-->
     <string name="dairy_one_title">Eggs</string>
     <string name="dairy_two_title">Milk</string>
@@ -100,4 +97,13 @@
     <string name="dairy_two_description">Cow\'s milk is a good source of protein and calcium, as well as nutrients including vitamin B12 and iodine. It also contains magnesium, which is important for bone development and muscle function, and whey and casein, which have been found to play a role in lowering blood pressure</string>
     <string name="dairy_three_description">Bread is a staple food prepared from a dough of flour and water, usually by baking. Throughout recorded history, it has been a prominent food in large parts of the world.</string>
     <string name="dairy_four_description">Cheese is a dairy product, derived from milk and produced in wide ranges of flavors, textures and forms by coagulation of the milk protein casein.</string>
+
+    <!--"About Us" Section Strings-->
+    <string name="about_app_title">About Us</string>
+    <string name="about_app_description">We bring the season\'s best mix of 100% certified-organic produce and hand-crafted farm products conveniently to your door by growing and partnering with local farms and artisans.</string>
+    <string name="app_location_title">Locate Nearest Store</string>
+    <string name="app_location_description">Our stores are located in every major city. Click here to find out the one near you.</string>
+    <string name="app_location_image">Nearest Location</string>
+    <string name="app_coming_soon">2022\nGoals</string>
+    <string name="app_fruits">Apple, Banana, Orange, Blackberry, Strawberry and Raspberry.</string>
 </resources>

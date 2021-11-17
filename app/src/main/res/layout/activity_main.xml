@@ -7,11 +7,23 @@
     android:background="#EEEEEE"
     tools:context=".MainActivity">
 
+    <!--All Views are placed inside a ScrollView
+
+    The entire layout is divided into four parts. The division is exhibited by a
+    single horizontal line. :
+
+    1. Contains a HorizontalScrollView holding all the offers/upcoming announcements.
+    2. Contains all the "Vegetables" products.
+    3. Contains all the "Dairy" products.
+    4. Contains the "About Us" section.-->
+
+    <!--All its children views are placed in "vertical" orientation.-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <!--Part 1-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,36 +42,10 @@
                     android:paddingHorizontal="16dp"
                     android:paddingTop="16dp">
 
-                    <androidx.cardview.widget.CardView style="@style/CardViewStyle">
-
-                        <LinearLayout style="@style/HorizontalChildStyle">
-
-                            <LinearLayout style="@style/OfferLayout">
-
-                                <TextView
-                                    style="@style/OfferTitle"
-                                    android:text="@string/offer_one_title" />
-
-                                <TextView
-                                    style="@style/OfferOff"
-                                    android:text="@string/offer_one_off" />
-
-                                <TextView
-                                    style="@style/OfferCode"
-                                    android:text="@string/offer_one_code" />
-                            </LinearLayout>
-
-                            <ImageView
-                                style="@style/OfferLayoutImageView"
-                                android:contentDescription="@string/offer_one_description"
-                                android:src="@drawable/ic_sandwich" />
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
+                    <!--Offer on Fresh Veggies-->
                     <androidx.cardview.widget.CardView
                         style="@style/CardViewStyle"
-                        android:layout_marginHorizontal="16dp">
+                        app:cardBackgroundColor="@color/colorOfferOne">
 
                         <LinearLayout style="@style/HorizontalChildStyle">
 
@@ -70,11 +56,11 @@
                                     android:text="@string/offer_two_title" />
 
                                 <TextView
-                                    style="@style/OfferOff"
+                                    style="@style/OfferOffStyle"
                                     android:text="@string/offer_two_off" />
 
                                 <TextView
-                                    style="@style/OfferCode"
+                                    style="@style/OfferCodeStyle"
                                     android:text="@string/offer_two_code" />
                             </LinearLayout>
 
@@ -87,9 +73,11 @@
 
                     </androidx.cardview.widget.CardView>
 
+                    <!--Offer on Dairy Products-->
                     <androidx.cardview.widget.CardView
                         style="@style/CardViewStyle"
-                        app:cardBackgroundColor="#4fc3f7">
+                        android:layout_marginStart="16dp"
+                        app:cardBackgroundColor="@color/colorOfferTwo">
 
                         <LinearLayout style="@style/HorizontalChildStyle">
 
@@ -98,17 +86,17 @@
                                 <TextView
                                     style="@style/OfferTitle"
                                     android:text="@string/offer_three_title"
-                                    android:textColor="#11539E" />
+                                    android:textColor="@color/colorCustomOfferText" />
 
                                 <TextView
-                                    style="@style/OfferOff"
+                                    style="@style/OfferOffStyle"
                                     android:text="@string/offer_two_off"
-                                    android:textColor="#11539E" />
+                                    android:textColor="@color/colorCustomOfferText" />
 
                                 <TextView
-                                    style="@style/OfferCode"
+                                    style="@style/OfferCodeStyle"
                                     android:text="@string/offer_two_code"
-                                    android:textColor="#11539E" />
+                                    android:textColor="@color/colorCustomOfferText" />
                             </LinearLayout>
 
                             <ImageView
@@ -118,10 +106,11 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
+                    <!--Offer on Bulk for outside stores-->
                     <androidx.cardview.widget.CardView
                         style="@style/CardViewStyle"
                         android:layout_marginStart="16dp"
-                        app:cardBackgroundColor="#FBC02D">
+                        app:cardBackgroundColor="@color/colorOfferThree">
 
                         <LinearLayout style="@style/HorizontalChildStyle">
 
@@ -130,17 +119,17 @@
                                 <TextView
                                     style="@style/OfferTitle"
                                     android:text="@string/offer_four_title"
-                                    android:textColor="#11539E" />
+                                    android:textColor="@color/colorCustomOfferText" />
 
                                 <TextView
-                                    style="@style/OfferOff"
+                                    style="@style/OfferOffStyle"
                                     android:text="@string/offer_four_off"
-                                    android:textColor="#11539E" />
+                                    android:textColor="@color/colorCustomOfferText" />
 
                                 <TextView
-                                    style="@style/OfferCode"
+                                    style="@style/OfferCodeStyle"
                                     android:text="@string/offer_four_code"
-                                    android:textColor="#11539E" />
+                                    android:textColor="@color/colorCustomOfferText" />
                             </LinearLayout>
 
                             <ImageView
@@ -149,20 +138,46 @@
                                 android:src="@drawable/ic_truck" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
+
+                    <!--Future Updates-->
+                    <androidx.cardview.widget.CardView
+                        style="@style/CardViewStyle"
+                        android:layout_marginStart="16dp"
+                        app:cardBackgroundColor="@color/colorOfferFour">
+
+                        <LinearLayout
+                            style="@style/ItemContainerStyle"
+                            android:gravity="center"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <TextView
+                                style="@style/OfferOffStyle"
+                                android:text="@string/app_coming_soon" />
+
+                            <ImageView
+                                style="@style/OfferLayoutImageView"
+                                android:contentDescription="@string/app_fruits"
+                                android:src="@drawable/ic_fruits" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <!--Divider-->
             <View
                 style="@style/Divider"
                 android:layout_marginTop="16dp" />
         </LinearLayout>
 
+        <!--Part 2-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
+            <!--Labels the "Vegetable" category.-->
             <TextView
                 style="@style/Category"
                 android:layout_marginBottom="16dp"
@@ -170,29 +185,29 @@
 
             <!--Broccoli-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#81C784">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableOne">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_one_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_one_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_one_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_broccoli" />
                 </LinearLayout>
@@ -201,29 +216,29 @@
 
             <!--Cabbage-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#C8E6C9">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableTwo">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_two_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_two_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_two_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_cabbage" />
                 </LinearLayout>
@@ -232,29 +247,29 @@
 
             <!--Red Cabbage-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#D1C4E9">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableThree">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_three_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_three_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_three_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_cabbage_red" />
                 </LinearLayout>
@@ -263,29 +278,29 @@
 
             <!--Capsicum-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#81C784">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableFour">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_four_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_four_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_four_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_capsicum" />
                 </LinearLayout>
@@ -294,29 +309,29 @@
 
             <!--Red Capsicum-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFCDD2">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableFive">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_five_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_five_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_five_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_capsicum_red" />
                 </LinearLayout>
@@ -325,29 +340,29 @@
 
             <!--Yellow Capsicum-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFF176">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableSix">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_six_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_six_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_six_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_capsicum_yellow" />
                 </LinearLayout>
@@ -356,29 +371,31 @@
 
             <!--Carrot-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFE0B2">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableSeven">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout
+                    style="@style/ItemContainerStyle"
+                    tools:ignore="TooManyViews">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_seven_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_seven_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_seven_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_carrot" />
                 </LinearLayout>
@@ -387,29 +404,29 @@
 
             <!--Cucumber-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#B9F6CA">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableEight">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_eight_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_eight_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_eight_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_cucumber" />
                 </LinearLayout>
@@ -418,29 +435,29 @@
 
             <!--Eggplant-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#D1C4E9">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableNine">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_nine_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_nine_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_nine_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_eggplant" />
                 </LinearLayout>
@@ -449,29 +466,29 @@
 
             <!--Mushroom-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#D7CCC8">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableTen">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_ten_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_ten_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_ten_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_mushroom" />
                 </LinearLayout>
@@ -480,29 +497,29 @@
 
             <!--Onion-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#E1BEE7">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableEleven">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_eleven_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_eleven_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_eleven_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_onion" />
                 </LinearLayout>
@@ -511,29 +528,29 @@
 
             <!--Potato-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFE0B2">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableTwelve">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_twelve_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_twelve_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_twelve_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_potato" />
                 </LinearLayout>
@@ -542,29 +559,29 @@
 
             <!--Radish-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#A5D6A7">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableThirteen">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_thirteen_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_thirteen_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_thirteen_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_radish" />
                 </LinearLayout>
@@ -573,29 +590,29 @@
 
             <!--Tomato-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFCDD2">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableFourteen">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_fourteen_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_fourteen_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_fourteen_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_tomato" />
                 </LinearLayout>
@@ -604,41 +621,43 @@
 
             <!--Turnip-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#81C784">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorVegetableFifteen">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/vegetable_fifteen_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/vegetable_fifteen_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_fifteen_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_turnip" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
+            <!--Divider-->
             <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginHorizontal="32dp"
-                android:background="#E0E0E0" />
+                style="@style/Divider"
+                android:layout_marginHorizontal="32dp" />
 
+            <!--Part 3-->
+
+            <!--Labels the "Dairy" category.-->
             <TextView
                 style="@style/Category"
                 android:layout_marginVertical="16dp"
@@ -646,29 +665,29 @@
 
             <!--Eggs-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#D7CCC8">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorDairyOne">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/dairy_one_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/dairy_one_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/dairy_one_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_eggs" />
                 </LinearLayout>
@@ -677,29 +696,29 @@
 
             <!--Milk-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#81D4FA">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorDairyTwo">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/dairy_two_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/dairy_two_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/vegetable_two_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_milk" />
                 </LinearLayout>
@@ -708,29 +727,29 @@
 
             <!--Bread-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFE0B2">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorDairyThree">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/dairy_three_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/dairy_three_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/dairy_three_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_bread" />
                 </LinearLayout>
@@ -739,92 +758,98 @@
 
             <!--Cheese-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                app:cardBackgroundColor="#FFE082">
+                style="@style/ItemCardStyle"
+                app:cardBackgroundColor="@color/colorDairyFour">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout style="@style/ItemContainerStyle">
 
                     <LinearLayout style="@style/OfferLayout">
 
                         <TextView
-                            style="@style/VegFruitTitle"
+                            style="@style/ItemTitleStyle"
                             android:text="@string/dairy_four_title" />
 
                         <TextView
-                            style="@style/VegFruitDescription"
+                            style="@style/ItemDescriptionStyle"
                             android:text="@string/dairy_four_description" />
 
                         <TextView
-                            style="@style/VegFruitPrice"
+                            style="@style/ItemPriceStyle"
                             android:text="@string/dairy_four_price" />
 
                     </LinearLayout>
 
                     <ImageView
-                        style="@style/VegFruitImageView"
+                        style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
                         android:src="@drawable/ic_cheese" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <View style="@style/Divider" />
+            <!--Divider-->
+            <View
+                style="@style/Divider"
+                android:layout_marginBottom="16dp" />
 
-        </LinearLayout>
+            <!--Part 4-->
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#01579b"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/OfferTitle"
-                    android:layout_marginBottom="4dp"
-                    android:text="@string/about_app_title" />
-
-                <TextView
-                    style="@style/VegFruitDescription"
-                    android:text="@string/about_app_description" />
-            </LinearLayout>
-
+            <!--About Us Section-->
             <androidx.cardview.widget.CardView
-                style="@style/VegFruitCardStyle"
-                android:layout_marginTop="16dp"
+                style="@style/ItemCardStyle"
                 android:layout_marginBottom="0dp"
-                app:cardBackgroundColor="#006064">
+                app:cardBackgroundColor="@color/colorAboutUs">
 
-                <LinearLayout style="@style/VegFruitStyle">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
-                    <LinearLayout style="@style/OfferLayout">
+                    <TextView
+                        style="@style/OfferTitle"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/about_app_title"
+                        android:textColor="@color/colorTextSecondary" />
 
-                        <TextView
-                            style="@style/OfferTitle"
-                            android:layout_marginBottom="4dp"
-                            android:text="@string/app_location_title" />
+                    <TextView
+                        style="@style/AppDescriptionStyle"
+                        android:text="@string/about_app_description"
+                        android:textColor="@color/colorTextSecondary" />
 
-                        <TextView
-                            style="@style/VegFruitDescription"
-                            android:text="@string/app_location_description" />
-                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        style="@style/ItemCardStyle"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="0dp"
+                        app:cardBackgroundColor="@color/colorLocation">
 
-                    <ImageView
-                        style="@style/VegFruitImageView"
-                        android:contentDescription="@string/app_location_image"
-                        android:src="@drawable/ic_location" />
+                        <LinearLayout style="@style/ItemContainerStyle">
+
+                            <LinearLayout style="@style/OfferLayout">
+
+                                <TextView
+                                    style="@style/OfferTitle"
+                                    android:layout_marginBottom="4dp"
+                                    android:text="@string/app_location_title" />
+
+                                <TextView
+                                    style="@style/AppDescriptionStyle"
+                                    android:text="@string/app_location_description" />
+                            </LinearLayout>
+
+                            <ImageView
+                                style="@style/ItemPhotoStyle"
+                                android:contentDescription="@string/app_location_image"
+                                android:src="@drawable/ic_location" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
-
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
 
+        </LinearLayout>
 
     </LinearLayout>
 
