@@ -106,4 +106,6 @@
     <string name="app_location_image">Nearest Location</string>
     <string name="app_coming_soon">2022\nGoals</string>
     <string name="app_fruits">Apple, Banana, Orange, Blackberry, Strawberry and Raspberry.</string>
+    <string name="app_contact_title">Contact Us</string>
+    <string name="app_contact_info">Mob. - +91332312453\nEmail - nearbyfresh@gmail.com\nTimings - 8:00 AM to 8:00 PM</string>
 </resources>

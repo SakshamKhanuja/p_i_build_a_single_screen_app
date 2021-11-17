@@ -42,4 +42,5 @@
     <!--Color for "About Us" Section-->
     <color name="colorAboutUs">#1976D2</color>
     <color name="colorLocation">#006064</color>
+    <color name="colorContactUs">@color/colorTextDefault</color>
 </resources>

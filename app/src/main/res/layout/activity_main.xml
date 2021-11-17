@@ -820,7 +820,6 @@
                     <androidx.cardview.widget.CardView
                         style="@style/ItemCardStyle"
                         android:layout_marginTop="16dp"
-                        android:layout_marginBottom="0dp"
                         app:cardBackgroundColor="@color/colorLocation">
 
                         <LinearLayout style="@style/ItemContainerStyle">
@@ -841,6 +840,28 @@
                                 style="@style/ItemPhotoStyle"
                                 android:contentDescription="@string/app_location_image"
                                 android:src="@drawable/ic_location" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/ItemCardStyle"
+                        android:layout_marginBottom="0dp"
+                        app:cardBackgroundColor="@color/colorContactUs">
+
+                        <LinearLayout
+                            style="@style/ItemContainerStyle"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/OfferTitle"
+                                android:layout_marginBottom="4dp"
+                                android:text="@string/app_contact_title" />
+
+                            <TextView
+                                style="@style/AppDescriptionStyle"
+                                android:text="@string/app_contact_info" />
                         </LinearLayout>
 
 
