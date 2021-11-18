@@ -7,6 +7,9 @@
     <color name="colorTextSecondary">@android:color/white</color>
     <color name="colorDivider">#E0E0E0</color>
 
+    <!--Logo Color-->
+    <color name="logo_background">#017b4f</color>
+
     <!--Color for offers-->
     <color name="colorOfferOne">#B71C1C</color>
     <color name="colorOfferTwo">#4fc3f7</color>
