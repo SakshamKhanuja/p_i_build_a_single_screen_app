@@ -31,12 +31,13 @@ Android Marshmallow API 23 - Android Q API 29
 
 Form Factor | Device Name | OS | Orientation
 --- | --- | --- | --- 
-Smartphone | Pixel 5 | Android Q | [Portrait](https://user-images.githubusercontent.com/94056845/142221659-aa2a9b7c-b36f-4a9a-8364-74413c122b1f.png)
-Smartphone | Nexus 5X | Android N | [Portrait](https://user-images.githubusercontent.com/94056845/142221668-2195e35a-dbbd-41e8-a875-1534b1bf866a.png)
+Smartphone | Pixel 5 | Android Q | [Portrait](https://user-images.githubusercontent.com/94056845/142354423-761db2d2-123e-4c19-8b04-4fa444060613.png)
+Smartphone | Nexus 5X | Android N | [Portrait](https://user-images.githubusercontent.com/94056845/142354428-8ec92a5d-d2ca-46eb-93cf-e478c46c9f48.png)
 
 ### Resources
 
-All icons are taken from [Flaticon](https://www.flaticon.com/).
+All icons are taken from [Flaticon](https://www.flaticon.com/).<br/>
+Description about items available in the store is taken from [BigBasket](https://www.bigbasket.com/).
 
 ### License
 
