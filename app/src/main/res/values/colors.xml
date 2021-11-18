@@ -43,7 +43,5 @@
     <color name="colorDairyFour">#FFECB3</color>
 
     <!--Color for "About Us" Section-->
-    <color name="colorAboutUs">#1976D2</color>
-    <color name="colorLocation">#006064</color>
-    <color name="colorContactUs">@color/colorTextDefault</color>
+    <color name="colorBusinessDetails">#9E9E9E</color>
 </resources>

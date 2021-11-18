@@ -399,7 +399,8 @@
                     <ImageView
                         style="@style/ItemPhotoStyle"
                         android:contentDescription="@string/category_one_title"
-                        android:src="@drawable/ic_capsicum_yellow" />
+                        android:src="@drawable/ic_capsicum_yellow"
+                        tools:ignore="TooManyViews" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -833,7 +834,7 @@
             <TextView
                 style="@style/BasicViewParameters"
                 android:text="@string/business_details"
-                android:textColor="#9E9E9E"
+                android:textColor="@color/colorBusinessDetails"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
